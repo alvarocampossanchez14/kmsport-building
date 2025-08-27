@@ -1,16 +1,65 @@
----
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="KM Sport. Nuestra web está en construcción. Próximamente, reprogramaciones, vinilos, material para tus coches y talleres y mucho más a nivel mundial." />
+    <meta name="keywords" content="KM Sport, reprogramaciones, españa, cataluña, VTC, tuning, coches, vinilo" />
+    <link rel="canonical" href="https://kmsport.net" />
+    <title>En Construcción | KM Sport</title>
+</head>
+<body>
+    <div class="relative min-h-screen flex items-center justify-center p-4 text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 to-black"></div>
 
----
+        <div class="relative z-10 text-center space-y-8 max-w-2xl mx-auto">
+            <div class="flex flex-col items-center">
+                <img src="/kmsport.png" alt="KM Sport Logo" class="h-42 w-auto mb-4" />
+            </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+            <h2 class="text-2xl md:text-4xl font-bold uppercase tracking-wide text-secondary">Sitio Web en Construcción</h2>
+            <p class="text-sm md:text-base text-gray-400">
+                Estamos trabajando para ofrecerte una experiencia increíble. Nuestra nueva web estará disponible muy pronto con más información sobre nuestras franquicias y servicios.
+            </p>
+
+            <div class="flex items-center justify-center space-x-6 mt-8">
+                <i class="fas fa-cogs text-6xl text-red-900 animate-spin-fast"></i>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+<style>
+@keyframes bg-pulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-fast {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+/* Configuración de las animaciones en Tailwind */
+.animate-bg-pulse {
+    animation: bg-pulse 15s ease-in-out infinite;
+    background-size: 200% 200%;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+}
+
+.animate-spin-fast {
+    animation: spin-fast 5s linear infinite;
+}
+</style>
